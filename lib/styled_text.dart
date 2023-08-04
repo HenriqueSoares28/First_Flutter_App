@@ -1,14 +1,16 @@
-// This code displays the message 
+// This code displays the message
 import 'package:flutter/material.dart';
 
 class StyledText extends StatelessWidget {
-  const StyledText({super.key});
+  const StyledText(this.text, {super.key});
+
+  final String text;
 
   @override
-  Widget build(context){
-    return const Text(
-      'Is that a gay pride flag?',
-      style: TextStyle(
+  Widget build(context) {
+    return Text(
+      text,
+      style: const TextStyle(
         fontSize: 32,
         fontWeight: FontWeight.bold,
         color: Colors.white,

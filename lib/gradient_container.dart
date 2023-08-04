@@ -3,6 +3,9 @@
 import 'package:flutter/material.dart';
 import 'package:new_teste/styled_text.dart';
 
+const  startAlignment = Alignment.bottomCenter;
+const endAlignment = Alignment.topCenter;
+
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
 
@@ -20,12 +23,12 @@ class GradientContainer extends StatelessWidget {
                 Colors.indigo,
                 Colors.purple,
               ],
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
+              begin: startAlignment,
+              end: endAlignment,
             ),
           ),
           child: const Center(
-            child: StyledText()
+            child: StyledText("Is that a gay pride flag?")
           ),
         );
   }
